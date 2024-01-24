@@ -89,8 +89,8 @@ class _PickedObjectState extends State<PickedObject> {
           decoration: BoxDecoration(
             color: Colors.amber,
             image: DecorationImage(
-                image: NetworkImage(
-                  pickedFiles['photo'],
+                image: AssetImage(
+                  "assets/${pickedFiles['photo']}",
                 ),
                 fit: BoxFit.cover),
             borderRadius: BorderRadius.circular(12),

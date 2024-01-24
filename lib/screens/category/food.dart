@@ -15,36 +15,31 @@ class _DrinksState extends State<Foods> {
     OvqatModel(
         title: "Ovqat 1",
         description:
-            "Shorwa is a traditional Afghan dish which is a simple dish which is usually mixed with bread on the dastarkhān. It is a long process and a pressure-cooker is usually used, as it reduces the process to 2 hours. The main ingredients for shorwa are potatoes, beans and meat. It is commonly served with Afghan bread.",
-        photo:
-            "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D",
+            "Ingredients: beef, tomatoes, cucumbers, eggs, beans, greens.Will be ready 40 minutes",
+        photo: "1.jpg",
         price: 33000),
     OvqatModel(
         title: "Ovqat 2",
         description:
-            "Shorwa is a traditional Afghan dish which is a simple dish which is usually mixed with bread on the dastarkhān. It is a long process and a pressure-cooker is usually used, as it reduces the process to 2 hours. The main ingredients for shorwa are potatoes, beans and meat. It is commonly served with Afghan bread.",
-        photo:
-            "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fHw%3D",
+            "Ingredients: small tomatoes, peas, peppers and greens.Will be ready 40 minutes",
+        photo: "2.jpg",
         price: 66000),
     OvqatModel(
         title: "Ovqat 3",
         description:
-            "Shorwa is a traditional Afghan dish which is a simple dish which is usually mixed with bread on the dastarkhān. It is a long process and a pressure-cooker is usually used, as it reduces the process to 2 hours. The main ingredients for shorwa are potatoes, beans and meat. It is commonly served with Afghan bread.",
-        photo:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXqZudfVlYvy3JYn1auBHENSe4v6W3qHXpE5c6XdnmHi1ggI5zQu70IWFbUDKZXHILn_k&usqp=CAU",
+            "Ingredients: small tomatoes, peas, greens, lemon and avocado. Will be ready 40 minutes",
+        photo: "3.jpg",
         price: 44000),
     OvqatModel(
         title: "Ovqat 4",
         description:
-            "Shorwa is a traditional Afghan dish which is a simple dish which is usually mixed with bread on the dastarkhān. It is a long process and a pressure-cooker is usually used, as it reduces the process to 2 hours. The main ingredients for shorwa are potatoes, beans and meat. It is commonly served with Afghan bread.",
-        photo: "https://api.time.com/wp-content/uploads/2015/06/veggies.jpg",
+            "Salad composition: small tomatoes, cucumbers, greens, mushrooms and mint. Will be ready 40 minutes",
+        photo: "4.jpg",
         price: 23000),
     OvqatModel(
         title: "Ovqat 5",
-        description:
-            "Shorwa is a traditional Afghan dish which is a simple dish which is usually mixed with bread on the dastarkhān. It is a long process and a pressure-cooker is usually used, as it reduces the process to 2 hours. The main ingredients for shorwa are potatoes, beans and meat. It is commonly served with Afghan bread.",
-        photo:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwg9cO6O2h0G3IueLJLHzAivfuWaGbEfSRgUwHeaBvuFptTrMyyH5JwToCQXoIpQQKRJM&usqp=CAU",
+        description: "six types of soup and bread will be ready in 40 minutes",
+        photo: "5.jpg",
         price: 12000),
   ];
   @override
@@ -82,9 +77,9 @@ class _DrinksState extends State<Foods> {
         width: 50,
         margin: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-            color: Colors.blue,
+            color: Colors.white,
             image: DecorationImage(
-                image: NetworkImage(model.photo), fit: BoxFit.cover),
+                image: AssetImage("assets/${model.photo}"), fit: BoxFit.cover),
             borderRadius: BorderRadius.circular(13)),
       ),
     );

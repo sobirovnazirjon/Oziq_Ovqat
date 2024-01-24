@@ -125,7 +125,8 @@ class _AddState extends State<Add> {
               width: double.infinity,
               height: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                  image: DecorationImage(image: NetworkImage(widget.photo))),
+                  image: DecorationImage(
+                      image: AssetImage("assets/${widget.photo}"))),
             ),
             Text(
               widget.title,

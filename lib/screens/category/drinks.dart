@@ -15,23 +15,20 @@ class _DrinksState extends State<Drinks> {
     OvqatModel(
         title: "Coca Cola",
         description:
-            "Shorwa is a traditional Afghan dish which is a simple dish which is usually mixed with bread on the dastarkhān. It is a long process and a pressure-cooker is usually used, as it reduces the process to 2 hours. The main ingredients for shorwa are potatoes, beans and meat. It is commonly served with Afghan bread.",
-        photo:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAorkgg8NfSx0Qk3h7nFzqJJzKvRJ2c7x3NxCOrt4A9B87p3DKbXDsEuX709R8ATF1Xfk&usqp=CAU",
+            "Coca-Cola's exact formula is a closely guarded secret, but generally, it contains carbonated water, high fructose corn syrup or sucrose, caramel color, phosphoric acid, natural flavors, and caffeine. Keep in mind that ingredient lists may vary slightly based on the region and specific product variations.",
+        photo: "cola.jpg",
         price: 13000),
     OvqatModel(
         title: "Fanta",
         description:
-            "Shorwa is a traditional Afghan dish which is a simple dish which is usually mixed with bread on the dastarkhān. It is a long process and a pressure-cooker is usually used, as it reduces the process to 2 hours. The main ingredients for shorwa are potatoes, beans and meat. It is commonly served with Afghan bread.",
-        photo:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO5zEnTCfIMoubFYVbIkGRmUI7MZ3AbLS8NA&usqp=CAU",
+            "Fanta's ingredients can vary by region, but a typical composition includes carbonated water, high fructose corn syrup or sugar, citric acid, natural and artificial flavors, sodium benzoate (preservative), and food coloring. It's important to check the specific product label for accurate information based on your location.",
+        photo: "fanta.jpg",
         price: 12000),
     OvqatModel(
         title: "Chortoq",
         description:
-            "Shorwa is a traditional Afghan dish which is a simple dish which is usually mixed with bread on the dastarkhān. It is a long process and a pressure-cooker is usually used, as it reduces the process to 2 hours. The main ingredients for shorwa are potatoes, beans and meat. It is commonly served with Afghan bread.",
-        photo:
-            "https://storage.kun.uz/source/1/EaBHvheuq-Sbd6uU2sUsYl8X6NIYWSwJ.jpg",
+            "healing, odorless and colorless water. According to its chemical composition, it is sodium sulfate chloride, water mineralization is 2.6 g/l with rN=7.2, and it contains 14 mg/l silicic acid.",
+        photo: "chortoq.jpg",
         price: 20000),
   ];
   @override
@@ -69,9 +66,10 @@ class _DrinksState extends State<Drinks> {
         width: 50,
         margin: const EdgeInsets.all(10),
         decoration: BoxDecoration(
-            color: Colors.blue,
+            color: Colors.white,
             image: DecorationImage(
-                image: NetworkImage(model.photo), fit: BoxFit.cover),
+                image: AssetImage("assets/${model.photo}"),
+                fit: BoxFit.fitHeight),
             borderRadius: BorderRadius.circular(13)),
       ),
     );
